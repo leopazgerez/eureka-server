@@ -15,6 +15,7 @@ public class GatewayConfig {
                 .route("userservice", r -> r.path("/users/**").uri("lb://userservice"))
                 .route("productservice", r -> r.path("/products/**").uri("lb://productservice"))
                 .route("orderservice", r -> r.path("/orders/**").uri("lb://orderservice"))
+                .route("emailservice", r -> r.path("/emails/**").uri("lb://emailservice"))
                 .build();
     }
 }
